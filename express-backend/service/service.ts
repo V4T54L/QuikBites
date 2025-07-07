@@ -31,7 +31,7 @@ export interface RestaurantService {
     deleteMenuItem(itemId: number): Promise<void>;
 
     getRestaurantOrders(restaurantID: number): Promise<OrderDetail[]>;
-    updateOrderStatus(orderId: number, status: string): Promise<void>;
+    updateOrderStatus(orderId: number, status: string, userId: number): Promise<void>;
     getAnalytics(restaurantID: number): Promise<RestaurantAnalytics>;
 }
 
